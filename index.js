@@ -1,7 +1,6 @@
 const express = require('express');
 const fs = require('fs');
 require("dotenv").config();
-
 const app = express();
 
 //Body parser
@@ -35,9 +34,8 @@ app.use(express.json())
     console.log(files)
   })
 
-
 //port
-const PORT=process.env.PORT || 5000  ;
+const PORT=process.env.PORT || 9000  ;
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on ${PORT}`)
